@@ -1,0 +1,351 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.5s;
+}
+
+.header{
+    background-color: rgb(3, 180, 180);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.titulo{
+    width: 150px;
+}
+
+.ul{
+    list-style: none;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.ul li{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+
+a:hover{
+    font-size: 26px;
+    transition: all 0.5s;
+}
+
+.title h2{
+    text-align: center;
+    background-color: rgb(149, 240, 74);
+    color: white;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    box-shadow: 5px 5px 15px 5px #000000;
+    font-size: 40px;
+}
+
+.background_gray{
+    background-color: rgb(66, 66, 66);
+    padding: 60px;
+}
+
+.background_white{
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 5px 5px 15px 5px #000000;
+    margin: 40px;
+}
+
+.box{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.box img{
+    width: 45%;
+}
+
+.description{
+    margin: 18px;
+    font-size: 25px;
+}
+
+.comida{
+    font-size: 40px;
+}
+
+.main{
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.mapaUbicacion{
+    border: 1px solid black;
+    background-color: rgb(149, 240, 74);
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 10px;
+    display: inline-block;
+}
+
+.direccion_fondo{
+    padding: 100px;
+}
+
+.direccion{
+    background-color: white;
+    display: inline-block;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.direccionDescripcion{
+    padding: 40px;
+    font-size: 30px;
+}
+
+.footer{
+    background-color: rgb(3, 180, 180);
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+}
+
+.copyright div h4{
+    font-size: 20px;
+}
+
+.logo_box{
+    display: flex;
+    align-items: center;
+}
+
+.logoYoshi{
+    width: 150px;
+}
+
+.social_media_box{
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia{
+    margin: 20px;
+    width: 60px;
+}
+
+@media screen and (max-width: 765px) {
+
+    .navbar{
+        margin-left: 35px;
+    }
+
+    .titulo{
+        width: 125px;
+    }
+
+    .ul li{
+        margin: 8px;
+    }
+
+    .ul li a{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 35px;
+        padding: 8px;
+    }
+
+    .background_gray{
+        padding: 40px;
+    }
+
+    .background_white{
+        display: grid;
+        grid-template-rows: auto;
+        margin: 30px;
+    }
+
+    .box{
+        display: grid;
+        grid-template-rows: auto auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .box img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .description{
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .img_div{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .main{
+        padding-top: 80px;
+    }
+
+    .mapaUbicacion iframe{
+        width: 100%;
+    }
+
+    .direccion_fondo{
+        padding: 80px;
+    }
+
+    .direccionDescripcion{
+        padding: 35px;
+        font-size: 25px;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 160px 160px 160px;
+        padding: 8px;
+    }
+
+    .copyright div{
+        font-size: 15px;
+    }
+        
+    .logoYoshi{
+        width: 125px;
+    }
+
+    .social_media_box{
+        text-align: center;
+    }
+
+    .socialMedia{
+        margin: 10px;
+        width: 38px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar{
+        margin-left: 25px;
+    }
+
+    .titulo{
+        width: 100px;
+    }
+
+    .ul{
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .ul li{
+        margin: 5px;
+    }
+
+    .ul li a{
+        font-size: 15px;
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .title{
+        font-size: 25px;
+        padding: 6px;
+    }
+
+    .background_gray{
+        padding: 25px;
+    }
+
+    .background_white{
+        display: grid;
+        grid-template-rows: auto;
+        margin: 15px;
+    }
+
+    .box{
+        display: grid;
+        grid-template-rows: auto auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .box img{
+        width: 100%;
+    }
+
+    .description{
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .img_div{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .main{
+        padding-top: 65px;
+    }
+
+    .mapaUbicacion iframe{
+        width: 100%;
+    }
+
+    .direccion_fondo{
+        padding: 60px;
+    }
+
+    .direccionDescripcion{
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 100px auto auto;
+        padding: 6px;
+    }
+
+    .copyright div{
+        font-size: 10px;
+    }
+        
+    .logoYoshi{
+        width: 95px;
+    }
+
+    .social_media_box{
+        text-align: center;
+    }
+
+    .socialMedia{
+        margin: 6px;
+        width: 25px;
+    }
+
+}
